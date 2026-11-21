@@ -1,4 +1,4 @@
-# RubbleEar — offline acoustic-vibrational survivor detection (SIH)
+# RubbleEar — offline acoustic-vibrational survivor detection 
 
 Progressive Web App that listens (mic) and feels (accelerometer) through a phone pressed to rubble, suppresses generator/excavator noise, flags rhythmic human taps/knocks/shouts, and estimates range; readings from ≥2 positions are intersected into a proximity heatmap. 100 % free/open-source, runs offline in the browser.
 
