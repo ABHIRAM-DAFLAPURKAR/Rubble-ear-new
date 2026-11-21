@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make:*)", "Bash(python3 -m pytest:*)", "Bash(pytest:*)", "Bash(ruff:*)",
+      "Bash(npm run:*)", "Bash(npm install:*)", "Bash(npx vitest:*)", "Bash(npx tsc:*)",
+      "Bash(git status)", "Bash(git diff:*)", "Bash(git add:*)", "Bash(git commit:*)", "Bash(git log:*)"
+    ],
+    "deny": ["Bash(rm -rf /*)", "Bash(curl * | sh)", "Bash(git push --force:*)", "Read(./.env)"]
+  },
+  "hooks": {
+    "PostToolUse": [
+      { "matcher": "Edit|Write", "hooks": [{ "type": "command", "command": "bash scripts/hook_post_edit.sh" }] }
+    ]
+  }
+}

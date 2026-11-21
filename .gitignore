@@ -1,0 +1,9 @@
+data/raw/
+data/processed/
+models/*.keras
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.env
+
+.env

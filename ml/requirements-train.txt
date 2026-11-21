@@ -1,0 +1,9 @@
+-r requirements.txt
+tensorflow>=2.16,<2.19
+tensorflow-hub>=0.16
+tensorflowjs>=4.20
+librosa>=0.10
+audiomentations>=0.36
+pyroomacoustics>=0.7
+onnx>=1.16
+tf2onnx>=1.16

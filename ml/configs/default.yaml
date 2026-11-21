@@ -1,0 +1,24 @@
+# SINGLE SOURCE OF TRUTH for DSP constants. web/lib/dsp/config.ts MUST mirror this file.
+audio:
+  sr: 16000
+  win: 400        # 25 ms
+  hop: 160        # 10 ms
+  n_fft: 512
+  n_mels: 64
+  fmin: 20.0
+  fmax: 8000.0
+  eps: 1.0e-6
+imu:
+  sr: 50          # browsers cap accelerometer at ~50-60 Hz; do NOT assume 100 Hz
+classes: [tap_knock, shout, rubble_settling, background]
+synth:
+  clip_seconds: 4.0
+  snr_db_range: [-10, 10]
+  depth_m_range: [0.3, 3.0]
+  alpha_per_m: 0.6     # absorption coefficient in Eq.13 (tunable, documented as an assumption)
+train:
+  seed: 1337
+  n_examples: 2000
+  epochs: 15
+  batch_size: 32
+  lr: 1.0e-3
